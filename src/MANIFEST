@@ -1,0 +1,30 @@
+ChangeLog
+ChangeLog.xml
+etc/ChangeLogML.xsd
+ex/make_gallery.pl
+imgsize
+lib/Image/Size.pm
+MANIFEST			This list of files
+MANIFEST.SKIP
+README
+t/00_signature.t
+t/468x60.psd
+t/8.swf
+t/all.t
+t/bexjdic.tif
+t/letter_N.ppm
+t/letter_T.jpg
+t/lexjdic.tif
+t/magick.t
+t/pak38.jpg
+t/pass-1_s.png
+t/pod.t
+t/pod_coverage.t
+t/spacer50.xbm
+t/test.gif
+t/xterm.bmp
+t/xterm.xpm
+t/yasp.swf
+Makefile.PL
+META.yml
+SIGNATURE    Added here by Module::Build
