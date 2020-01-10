@@ -1,6 +1,6 @@
 Name:           perl-Image-Size
 Version:        3.2
-Release:        4%{?dist}
+Release:        6%{?dist}
 Summary:        Determine the size of images in several common formats in Perl
 
 Group:          Development/Libraries
@@ -13,7 +13,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 BuildRequires:  perl(Module::Build)
 BuildRequires:  perl(Compress::Zlib)
-BuildRequires:  perl(Image::Magick)
+BuildRequires:  perl(Image::Magick) >= 6.7.2.7
 BuildRequires:  perl(Test::Pod)
 BuildRequires:  perl(Test::Pod::Coverage)
 Requires:       perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
@@ -81,6 +81,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Wed Mar 04 2015 Jan Horak <jhorak@redhat.com> - 3.2-6
+- Rebuilt due to ImageMagick rebase
+
 * Wed Feb 17 2010 Marcela Mašláňová <mmaslano@redhat.com> - 3.2-4
 - make rpmlint happy
 - Related: rhbz#543948
